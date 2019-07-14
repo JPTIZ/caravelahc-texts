@@ -55,12 +55,6 @@ forma bastante natural.
 Software Livre para uma Ciência melhor
 --------------------------------------
 
-> O que eu quero com esta seção:
-> - Demonstrar como SL é maravilhoso para:
->   1. Divulgação científica;
->   2. Contribuição científica;
->   3. Perpetuar o conhecimento científico.
-
 Ciência, como forma de buscar verdade, de tentar nos livrar da ignorância,
 seria inconsistente se fosse feita para apenas algumas pessoas. Apesar de que a
 forma como fazemos ciência depende muito da publicação de artigos, da inovação,
@@ -121,6 +115,10 @@ Pare ainda para pensar no que isso tudo significa:
   pessoa vai querer se aventurar pelo repositório na curiosidade de ver o que
   está sendo feito naquela pesquisa.
 
+Vale destacar também o [manifesto "Código é
+Ciência"](https://codeisscience.github.io/manifesto/manifesto.html), que
+ressalta um pouco desses pontos.
+
 ### Perpetuação do conhecimento e avanço tecnológico
 
 Ciência gera conhecimento e com ele avançamos nossa tecnologia e sociedade,
@@ -147,35 +145,87 @@ por transistores virtualmente desnecessários.
 Em uma comunidade ativa de Software Livre, porém, seria bem possível que cópias
 desses códigos-fonte estivessem distribuídas entre diferentes usuários, e
 portanto salva de alguma forma. Não há garantia de que isso aconteça, claro,
-mas a chance de se preservar esse código-fonte é maior.
+mas a chance de se preservar esse código-fonte é maior, especialmente em
+sistemas distribuídos, como o [Git](https://git-scm.com), em que literalmente
+cada cópia de um projeto versionado é e, para fazer contribuir para ele, você
+quase sempre fará uma cópia.
 
-Software Livre é Inclusão
--------------------------
+"Pago" não quer dizer melhor
+----------------------------
 
-Indo para questões mais individuais, podemos ver o potencial de Software Livre
-para inclusão. Olhando pelo caso do Blender: um software livre e gratuito de
-modelagem 3D. Se alguém já na adolescência pensa em ser artista (quando
-dificilmente tem alguma fonte de renda), ainda que isso vá requerir um
-computador com algumas especificações mais robustas, a utilização do Blender
-está disponível para aquele adolescente: nada o impede de seguir tutoriais na
-internet e se preparar para, quando chegar na fase adulta, ter uma experiência
-com modelagem sem mesmo ter feito um curso técnico, e assim podendo trabalhar
-por conta própria ainda que com uma carga reduzida para poder lidar com os
-estudos.
+Um dos fatores mais interessantes é que se costuma dizer que algo é melhor por
+ser pago. Mas isso está longe de ser realidade, e exemplos claros disso são o
+GCC e Clang (compiladores de C e C++), por exemplo: todo o _standard_ mais
+recente de C++ está implementado sempre mais cedo neles do que suas
+alternativas proprietárias (principalmente em relação ao compilador da
+Embarcadero, que era originalmente da Borland), e são ainda referências no
+quesito otimização, num ponto em que as melhores otimizações para código C e
+C++ estão neles. Essa diferença fica bem clara quando se olha o [suporte dos
+compiladores à features de
+C++](https://en.cppreference.com/w/cpp/compiler_support). Por fim, no quesito
+confiabilidade, a GNU possui [um artigo sobre como Software Livre é mais
+confiável](https://www.gnu.org/software/reliability.html).
 
-Para ver o quão necessário é a existência de softwares livres, pense em quantas
-pessoas usam um Photoshop crackeado. Distribuição de Photoshop crackeado é tão
-comum na internet quanto caldo de cana na feirinha da UFSC, e detalhe: muito
-provavelmente as pessoas que usam um programa crackeado não iriam comprar a
-licença do programa. No final, a falta de liberdade no Photoshop serve apenas
-para que usuários peguem algum vírus em _cracks_ maliciosos, o que impacta
-negativamente em uma série de outros aspectos (incluindo privacidade), e sem
-mesmo ter respaldo legal para utilizar o programa para fins comerciais, ainda
-que dificilmente alguém vá denunciar o uso indevido de software proprietário.
+Software Livre não vai quebrar sua empresa
+------------------------------------------
+
+Sem chegar no ponto de, como já citado, terem empresas que desenvolvem Software
+Proprietário mesmo tendo alternativas livres definitivamente melhores (às vezes
+por questão de conveniência para uma plataforma específica), é totalmente
+possível estar no mercado desenvolvendo Software Livre dedicadamente. É o caso
+do [RocketChat](https://rocket.chat/), que é legitimamente uma empresa
+desenvolvendo um Software Livre que conta com [uma equipe de membros de
+diferentes países](https://rocket.chat/team).
+
+Um fator interessante de Softwares Livres é que com ele se entende que o real
+valor de um software não está no programa final: ele já foi compilado, não há o
+trabalho de produção como o caso de peças de máquinas e etc. O real valor está
+no **processo de produção** e nas **garantias** (manutenção e serviço de
+suporte ao usuário, por exemplo): você é pago para desenvolver software e por
+oferecer serviços relacionados a ele, não por ter compilado um código-fonte uma
+vez. O que o RocketChat faz, por exemplo, é deixar livre para você fazer o que
+quiser - até mesmo criar sua própria instância de RocketChat no seu servidor,
+mas caso queira, você pode alugar um servidor deles - e aí é que entra o
+pagamento.
+
+Para complementar, o que é muito intrigante, **a própria Microsoft tem aderido
+ao mundo Open Source**! Para sumarizar as últimas decisões desde que o novo
+CEO, Satya Nadella, assumiu:
+1. Foram liberados os códigos-fonte de alguns dos produtos, desde a
+   [calculadora do Windows](https://github.com/microsoft/calculator) até o
+   [compilador de Q#](https://github.com/microsoft/qsharp-compiler) (linguagem
+   para descrição de programas para computadores quânticos - pense nisso
+   enquanto lembra o que foi falado sobre pesquisa);
+2. Foi criado o [Visual Studio Code](https://code.visualstudio.com), um editor
+   de código gratuito bastante potente com suporte nativo e descomplicado a
+   plugins e melhorias, com potencial para se igualar a muitas IDEs de ponta;
+3. Foram inseridos, no Windows, programas comuns e até mesmo nativos de
+   distribuições Linux, como [um terminal Bash e
+   OpenSSH](https://www.theverge.com/2019/5/6/18534687/microsoft-windows-10-linux-kernel-feature).
+4. Por fim, não poderíamos deixar de citar [a compra do GitHub pela
+   Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
+   no ano passado.
 
 Para finalizar
 --------------
 
+Podemos falar mais e mais sobre esse assunto, incluindo o impacto de Software
+Livre e Open-Source na inclusão, na capacitação de jovens, e em vários outros
+aspectos, mas para este artigo já temos bastante coisa.
+
+Caso tenha ficado curioso sobre quais licenças são caracterizadas como Livres,
+a própria GNU tem uma [lista de licenças livres e
+não-livres](https://www.gnu.org/licenses/license-list.html), e de bônus, para
+quando precisar escolher uma licença, o GitHub disponibiliza um [guia rápido de
+como escolher uma licença](https://choosealicense.com/). O GitHub tem sido uma
+plataforma bastante importante no fomento de Software Livre, tanto que, além
+dos guias já citados, há também um [guia de como contribuir para projetos Open
+Source](https://opensource.guide/). Ficam então essas sugestões de leitura,
+caso queira dar os primeiros passos na contribuição para um mundo de Software
+Livre.
+
 Por fim, segue nosso final recado:
 
 > Software é conhecimento, e conhecimento deve ser livre.
+
+Esperamos que tenham gostado da leitura, e até daqui a duas semanas!
