@@ -71,19 +71,19 @@ então era necessário prever como seria sua forma visualmente. Isso era feito
 partindo do princípio que toda teoria em torno desse tema estaria correta
 (lembre-se de que estamos falando de corpos celestes a distâncias absurdas),
 por exemplo: se a densidade (quantidade de massa em um determinado espaço) de
-um buraco negro fosse realmente tão, mas tão absurda, então nem mesmo a luz
-escaparia e assim seu centro seria completamente escuro (por isso o nome
-"buraco negro"). Então, em abril de 2019, estava lá: pesquisadores conseguiram,
-através de uma pesquisa bem complexa, a primeira imagem de um buraco negro na
-história humana:
+um buraco negro fosse realmente tão, mas tão grande, sua gravidade seria tanta
+que nem mesmo a luz escaparia dele e assim seu centro seria completamente
+escuro (por isso o nome "buraco negro"). Então, em abril de 2019, estava lá:
+pesquisadores conseguiram, através de uma pesquisa bem complexa, a primeira
+imagem de um buraco negro na história humana:
 
 ![Imagem do buraco
 negro](https://i.guim.co.uk/img/media/ddda0e5745cba9e3248f0e27b3946f14c4d5bc04/108_0_7200_4320/master/7200.jpg?width=620&quality=85&auto=format&fit=max&s=6a24f6bba6bbc15e7ebd24bb0b46d158)
 
-Perceba que essa imagem já confirma uma das afirmações (de a luz não escapar).
-Um físico poderia descrever quantas outras confirmações se tem com essa pequena
-imagem, mas já dá para entender o nível da contribuição científica que há
-nisso.
+Perceba que essa imagem já confirma uma das afirmações (a de a luz não
+escapar).  Um físico poderia descrever quantas outras confirmações se tem com
+essa pequena imagem, mas já dá para entender o nível da contribuição científica
+que há nisso.
 
 E o que isso tem a ver com Software Livre? Aí que vem uma das partes mais
 interessantes: [o código-fonte da biblioteca que deu origem a essa foto **é
@@ -91,9 +91,9 @@ aberto**](https://github.com/achael/eht-imaging), e sob licença GPLv3! Ou seja,
 qualquer um pode ver o que deu origem a essa pesquisa, e poderia fazê-lo desde
 muitos anos antes de conseguirem essa foto, e isso **não impediu**, de maneira
 alguma, a pesquisa de ser um marco histórico impressionante para a física. Se
-ser livre não impediu um projeto tão importante, que qualquer físico astrônomo
-adoraria ter seu nome nele, de se concretizar como marco histórico e ainda dar
-o reconhecimento aos seus pesquisadores, por que tantas outros seriam
+ser livre não impediu de se concretizar como marco histórico um projeto tão
+importante que qualquer físico astrônomo adoraria ter seu nome nele, e ainda
+dando o reconhecimento aos seus pesquisadores, por que tantos outros seriam
 prejudicados?
 
 Pare ainda para pensar no que isso tudo significa:
@@ -109,8 +109,8 @@ Pare ainda para pensar no que isso tudo significa:
 - Há um apelo maior à divulgação e acompanhamento científico, perceba: o
   repositório conta, no momento, com 215 _watchers_, +5000 _stars_ e 452
   _forks_. Quantos outros projetos de pesquisa científica não poderiam chegar
-  mais facilmentena comunidade se estivessem disponíveis? Imagine diferentes
-  pessoas, em seus _feeds_ do GitHub vendo que um amigo deu _star_ em um
+  mais facilmente na comunidade se estivessem disponíveis? Imagine diferentes
+  pessoas em seus _feeds_ do GitHub vendo que um amigo deu _star_ em um
   repositório de pesquisa que pareça interessante. Muito provavelmente aquela
   pessoa vai querer se aventurar pelo repositório na curiosidade de ver o que
   está sendo feito naquela pesquisa.
@@ -147,8 +147,8 @@ desses códigos-fonte estivessem distribuídas entre diferentes usuários, e
 portanto salva de alguma forma. Não há garantia de que isso aconteça, claro,
 mas a chance de se preservar esse código-fonte é maior, especialmente em
 sistemas distribuídos, como o [Git](https://git-scm.com), em que literalmente
-cada cópia de um projeto versionado é e, para fazer contribuir para ele, você
-quase sempre fará uma cópia.
+cada cópia de um projeto versionado é independente e, para começar a contribuir
+para ele, você quase sempre fará uma cópia.
 
 "Pago" não quer dizer melhor
 ----------------------------
@@ -177,7 +177,7 @@ do [RocketChat](https://rocket.chat/), que é legitimamente uma empresa
 desenvolvendo um Software Livre que conta com [uma equipe de membros de
 diferentes países](https://rocket.chat/team).
 
-Um fator interessante de Softwares Livres é que com ele se entende que o real
+Um fator interessante de Softwares Livres é que com eles se entende que o real
 valor de um software não está no programa final: ele já foi compilado, não há o
 trabalho de produção como o caso de peças de máquinas e etc. O real valor está
 no **processo de produção** e nas **garantias** (manutenção e serviço de
@@ -204,7 +204,7 @@ CEO, Satya Nadella, assumiu:
    OpenSSH](https://www.theverge.com/2019/5/6/18534687/microsoft-windows-10-linux-kernel-feature).
 4. Por fim, não poderíamos deixar de citar [a compra do GitHub pela
    Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
-   no ano passado, que manteve a gratuidade da plataforma e até mesmo [tornou
+   no ano passado, que manteve a liberdade da plataforma e até mesmo [tornou
    gratuitas algumas
    funcionalidades](https://github.blog/2019-01-07-new-year-new-github://github.blog/2019-01-07-new-year-new-github/).
 
@@ -213,7 +213,21 @@ Para finalizar
 
 Podemos falar mais e mais sobre esse assunto, incluindo o impacto de Software
 Livre e Open-Source na inclusão, na capacitação de jovens, e em vários outros
-aspectos, mas para este artigo já temos bastante coisa.
+aspectos, mas para este artigo já temos bastante coisa. Se quiser começar a
+utilizar Softwares Livres, eis uma pequena lista de softwares interessantes:
+
+- Distribuições Linux: [Manjaro](https://manjaro.org), baseada no
+  [ArchLinux](https://http://archlinux.org);
+- Edição de imagens: [GIMP](https://www.gimp.org/) e, para vetorizadas,
+  [Inkscape](https://inkscape.org/);
+- Edição de vídeo: [KDEnlive](https://kdenlive.org/);
+- Edição de áudio: [Audacity](https://www.audacityteam.org);
+- Editores de código: [VSCode](https//code.visualstudio.com)¹,
+  [Atom](https://atom.io), [Vim](https://vim.org) (para terminal) e
+  [Emacs](https://emacs.org) (tanto com interface gráfica quanto para
+  terminal).
+
+_¹: O código-fonte é livre, os binários distribuídos são freeware._
 
 Caso tenha ficado curioso sobre quais licenças são caracterizadas como Livres,
 a própria GNU tem uma [lista de licenças livres e
