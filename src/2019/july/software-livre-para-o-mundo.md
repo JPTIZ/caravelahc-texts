@@ -204,7 +204,9 @@ CEO, Satya Nadella, assumiu:
    OpenSSH](https://www.theverge.com/2019/5/6/18534687/microsoft-windows-10-linux-kernel-feature).
 4. Por fim, não poderíamos deixar de citar [a compra do GitHub pela
    Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
-   no ano passado.
+   no ano passado, que manteve a gratuidade da plataforma e até mesmo [tornou
+   gratuitas algumas
+   funcionalidades](https://github.blog/2019-01-07-new-year-new-github://github.blog/2019-01-07-new-year-new-github/).
 
 Para finalizar
 --------------
