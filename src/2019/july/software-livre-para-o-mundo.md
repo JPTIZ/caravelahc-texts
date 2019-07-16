@@ -24,7 +24,7 @@ qualquer um usar, copiar, e/ou distribuir, seja na íntegra ou com modificaçõe
 seja gratuito ou por uma taxa"_. O termo em inglês, _free_, gera uma certa
 confusão por significar ambos "gratuito" e "livre". Nesse sentido, seguindo a
 própria referência da GNU, há que se destacar que Software Livre não se trata
-de ser gratuito, ainda mais quando a gratuidade é, na verdade, apenas
+de ser gratuito, ainda mais quando a gratuidade está, na verdade, apenas
 mascarando o preço por trás do Software. Por exemplo, ao comprar um notebook
 que venha com Windows pré-instalado e o pacote Office completo, isso não os faz
 livres e nem mesmo gratuitos: o que os tornaria livres é **a relação de
@@ -122,7 +122,7 @@ ressalta um pouco desses pontos.
 ### Perpetuação do conhecimento e avanço tecnológico
 
 Ciência gera conhecimento e com ele avançamos nossa tecnologia e sociedade,
-portanto se privamos da comunidade o que é feito na ciência, estamos reduzindo
+portanto se privamos a comunidade do que é feito na ciência, estamos reduzindo
 nossas chances de termos esses dois avanços. Por exemplo: se, por algum motivo,
 perdemos as pessoas que são "donas" de um conhecimento (no sentido de serem as
 únicas que tem acesso a ele), perdemos também o próprio conhecimento, e não é
@@ -177,6 +177,14 @@ do [RocketChat](https://rocket.chat/), que é legitimamente uma empresa
 desenvolvendo um Software Livre que conta com [uma equipe de membros de
 diferentes países](https://rocket.chat/team).
 
+Indo além do fato de que a empresa pode receber contribuições sem que haja
+custo para elas, podemos pensar pelo lado de recrutamento: como já há quem
+contribua para o software, fica mais fácil escolher quem contratar e,
+inclusive, familiarizar o novo empregado com a cultura da empresa
+(_onboarding_), além de que terá um maior conhecimento sobre a base de código
+do software e seu funcionamento. Não significa que seja algo aplicável a todo
+modelo de negócios, mas sim que é viável para vários casos.
+
 Um fator interessante de Softwares Livres é que com eles se entende que o real
 valor de um software não está no programa final: ele já foi compilado, não há o
 trabalho de produção como o caso de peças de máquinas e etc. O real valor está
@@ -187,6 +195,32 @@ vez. O que o RocketChat faz, por exemplo, é deixar livre para você fazer o que
 quiser - até mesmo criar sua própria instância de RocketChat no seu servidor,
 mas caso queira, você pode alugar um servidor deles - e aí é que entra o
 pagamento.
+
+Além disso, o que foi dito sobre Software Livre na ciência pode ser reiterado
+na questão de empresas: como seu produto pode ser auditado, isso dá maiores
+garantias de confiabilidade e qualidade. Um pouco da falta de possibilitar
+auditoria é comentada por Pavel Durov, criador do Telegram, em uma postagem
+sobre [por que o WhatsApp nunca poderá ser
+seguro](https://telegra.ph/Why-WhatsApp-Will-Never-Be-Secure-05-15), por
+exemplo, nas palavras dele (em tradução livre):
+
+> _"Diferente do Telegram, o WhatsApp não é de código-aberto, e portanto não
+> há como pesquisadores de segurança verificarem se há _backdoors²_ no
+> código"._
+
+_²Backdoors são brechas de segurança que possibilitam passar por cima dos
+métodos de autenticação de algum programa._
+
+E, de fato, essa verificação é complicada e fica quase que completamente a
+cargo da equipe que trabalha no software. Por exemplo, em uma das últimas
+atualizações do WhatsApp, uma das correções foi a da falha de segurança
+[CVE-2019-3568](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3568),
+que permitia execução de código arbitrário (i.e. o atacante poderia forçar o
+programa a executar quaisquer instruções que ele quisesse). Apesar da boa
+notícia sobre a correção, como não se tem acesso ao código-fonte, não se é
+possível auditar nem se a correção está realmente sendo aplicada, nem se ela
+não acabou por introduzir outras brechas de segurança, e nem mesmo se ela de
+fato corrige o problema de fato.
 
 Para complementar, o que é muito intrigante, **a própria Microsoft tem aderido
 ao mundo Open Source**! Para sumarizar as últimas decisões desde que o novo
@@ -218,6 +252,9 @@ utilizar Softwares Livres, eis uma pequena lista de softwares interessantes:
 
 - Distribuições Linux: [Manjaro](https://manjaro.org), baseada no
   [ArchLinux](https://http://archlinux.org);
+- Ilustração e pintura digital: [Krita](https://krita.org);
+- Modelagem 3D: [Blender](https://blender.org) (também para animação, edição de
+  vídeos e [esculturas](https://www.youtube.com/watch?v=tZnUgt659oI));
 - Edição de imagens: [GIMP](https://www.gimp.org/) e, para vetorizadas,
   [Inkscape](https://inkscape.org/);
 - Edição de vídeo: [KDEnlive](https://kdenlive.org/);
@@ -225,9 +262,12 @@ utilizar Softwares Livres, eis uma pequena lista de softwares interessantes:
 - Editores de código: [VSCode](https//code.visualstudio.com)¹,
   [Atom](https://atom.io), [Vim](https://vim.org) (para terminal) e
   [Emacs](https://emacs.org) (tanto com interface gráfica quanto para
-  terminal).
+  terminal);
+- Ferramentas de escritório: [LibreOffice](https://www.libreoffice.org/) e
+  [OpenOffice](https://www.openoffice.org);
+- Navegador: [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 
-_¹: O código-fonte é livre, os binários distribuídos são freeware._
+_²: O código-fonte é livre, os binários distribuídos são freeware._
 
 Caso tenha ficado curioso sobre quais licenças são caracterizadas como Livres,
 a própria GNU tem uma [lista de licenças livres e
@@ -245,3 +285,8 @@ Por fim, segue nosso final recado:
 > Software é conhecimento, e conhecimento deve ser livre.
 
 Esperamos que tenham gostado da leitura, e até daqui a duas semanas!
+
+Leituras extras
+---------------
+
+1. [What is free software?](https://www.gnu.org/philosophy/free-sw.html) - GNU
