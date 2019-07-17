@@ -14,42 +14,46 @@ o potencial imenso que há nas iniciativas de Software Livre.
 Livre quer dizer LIVRE
 ----------------------
 
+As definições de categorias de softwares que utilizaremos daqui para frente
+serão, de maneira bem justa, as da _Free Software Foundation_ (FSF), começando
+com a de Software Livre:
+
 > _"Free software is software that comes with permission for anyone to use,
 > copy, and/or distribute, either verbatim or with modifications, either gratis
-> or for a fee. "_ - [GNU - Categories of free and nonfree
+> or for a fee. "_ - [Free Software Foundation - Categories of free and nonfree
 > software](https://www.gnu.org/philosophy/categories.en.html)
 
 Ou, em tradução livre: _"Software livre é software que dê permissão para
 qualquer um usar, copiar, e/ou distribuir, seja na íntegra ou com modificações,
 seja gratuito ou por uma taxa"_. O termo em inglês, _free_, gera uma certa
-confusão por significar ambos "gratuito" e "livre". Nesse sentido, seguindo a
-própria referência da GNU, há que se destacar que Software Livre não se trata
-de ser gratuito, ainda mais quando a gratuidade está, na verdade, apenas
-mascarando o preço por trás do Software. Por exemplo, ao comprar um notebook
-que venha com Windows pré-instalado e o pacote Office completo, isso não os faz
-livres e nem mesmo gratuitos: o que os tornaria livres é **a relação de
-liberdade que existe no seu uso**, e não na falsa-gratuidade (afinal, ambos o
-Windows e os pacotes Office continuam sendo pagos).
+confusão por significar tanto "gratuito" quanto "livre". Nesse sentido,
+seguindo a própria referência da FSF, há de se destacar que Software Livre não
+se trata de ser gratuito. Por exemplo, ao comprar um notebook que venha com
+Windows pré-instalado e o pacote Office completo, isso não os faz livres e nem
+mesmo gratuitos: o que os tornaria livres é **a relação de liberdade que existe
+no seu uso**, e não na falsa-gratuidade (afinal, ambos o Windows e os pacotes
+Office continuam sendo pagos, além de que seu preço está embutido no do
+notebook).
 
-Quando se fala de liberdade de uso, deve-se entender "uso" de uma maneira
-ampla: no sentido de **redistribuição**, de **uso efetivo** (enquanto usuário
-final), de **análise** - seja via engenharia reversa ou pela leitura do código
-fonte -, de **modificação**, de **compilação** do código-fonte, e por aí vai.
+Para entender sobre essa liberdade de uso, veja [as 4 liberdades que definem um
+software como livre](https://www.gnu.org/philosophy/free-sw.html):
+0. A liberdade de executar o programa como quiser, para qualquer propósito;
+1. A liberdade de estudar como o programa funciona, e mudá-lo para fazer a
+   computação que você quiser. Acesso ao código-fonte é uma pré-condição para
+   isso;
+2. A liberdade de redistribuir cópias para que você possa ajudar outros;
+3. A liberdade de distribuir cópias de suas versões modificadas para outros.
+   Fazendo isso, você pode dar a toda uma comunidade a chance de se beneficiar
+   com suas mudanças. Acesso ao código-fonte é uma pré-condição para isso.
 
-Podemos entender ainda mais a ideia de Software Livre com seu contraste:
-**Softwares Proprietários** (não confundir com Software Comercial), ou
-"Softwares Não-Livres". Novamente, tomando como referência a GNU:
-
-> _"Nonfree software is any software that is not free. Its use, redistribution
-> or modification is prohibited, or requires you to ask for permission, or is
-> restricted so much that you effectively can't do it freely."_
-
-Ou seja, restrições no uso, necessidade de permissão, ou excesso de restrições
-são o suficiente para desclassificar um software como Livre. Portanto a
-**licença**, muito mais do que o preço, determina a liberdade de um Software.
-Agora, é claro, boa parte dos softwares livres tendem a ser gratuitos, uma vez
-que ser Código-Aberto e ser gratuito são características que se alinham de
-forma bastante natural.
+Qualquer software que viole alguma dessas liberdades é considerado **Software
+Proprietário** (não confundir com Software Comercial) ou **Software
+Não-Livre**. Ou seja, restrições no uso, necessidade de permissão, ou excesso
+de restrições são o suficiente para desclassificar um software como Livre.
+Portanto a **licença**, muito mais do que o preço, determina a liberdade de um
+Software. Agora, é claro, boa parte dos softwares livres tendem a ser
+gratuitos, uma vez que ser livre (e portanto de código-aberto) e ser gratuito
+são características que se alinham de forma bastante natural.
 
 
 Software Livre para uma Ciência melhor
@@ -163,7 +167,7 @@ quesito otimização, num ponto em que as melhores otimizações para código C 
 C++ estão neles. Essa diferença fica bem clara quando se olha o [suporte dos
 compiladores à features de
 C++](https://en.cppreference.com/w/cpp/compiler_support). Por fim, no quesito
-confiabilidade, a GNU possui [um artigo sobre como Software Livre é mais
+confiabilidade, a FSF possui [um artigo sobre como Software Livre é mais
 confiável](https://www.gnu.org/software/reliability.html).
 
 Software Livre não vai quebrar sua empresa
@@ -270,7 +274,7 @@ utilizar Softwares Livres, eis uma pequena lista de softwares interessantes:
 _²: O código-fonte é livre, os binários distribuídos são freeware._
 
 Caso tenha ficado curioso sobre quais licenças são caracterizadas como Livres,
-a própria GNU tem uma [lista de licenças livres e
+a própria FSF tem uma [lista de licenças livres e
 não-livres](https://www.gnu.org/licenses/license-list.html), e de bônus, para
 quando precisar escolher uma licença, o GitHub disponibiliza um [guia rápido de
 como escolher uma licença](https://choosealicense.com/). O GitHub tem sido uma
@@ -289,4 +293,4 @@ Esperamos que tenham gostado da leitura, e até daqui a duas semanas!
 Leituras extras
 ---------------
 
-1. [What is free software?](https://www.gnu.org/philosophy/free-sw.html) - GNU
+1. [What is free software?](https://www.gnu.org/philosophy/free-sw.html) - FSF
