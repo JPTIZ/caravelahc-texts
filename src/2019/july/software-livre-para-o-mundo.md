@@ -121,7 +121,10 @@ Pare ainda para pensar no que isso tudo significa:
 
 Vale destacar também o [manifesto "Código é
 Ciência"](https://codeisscience.github.io/manifesto/manifesto.html), que
-ressalta um pouco desses pontos.
+ressalta um pouco desses pontos. Esse manifesto foi apresentado na GCCBOSC 2018
+(_Galaxy Community Conference and Bioinformatics Open Source Conference_), com
+a [palestra de apresentação disponível no
+YouTube](https://www.youtube.com/watch?v=-YSNCERgFFc&list=PLir-OOQiOhXaHvCY_KYshsOMULuXDqvh7&index=38&t=0s).
 
 ### Perpetuação do conhecimento e avanço tecnológico
 
