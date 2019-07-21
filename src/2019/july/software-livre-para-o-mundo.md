@@ -84,21 +84,21 @@ imagem de um buraco negro na história humana:
 ![Imagem do buraco
 negro](https://i.guim.co.uk/img/media/ddda0e5745cba9e3248f0e27b3946f14c4d5bc04/108_0_7200_4320/master/7200.jpg?width=620&quality=85&auto=format&fit=max&s=6a24f6bba6bbc15e7ebd24bb0b46d158)
 
-Perceba que essa imagem já confirma uma das afirmações (a de a luz não
-escapar).  Um físico poderia descrever quantas outras confirmações se tem com
-essa pequena imagem, mas já dá para entender o nível da contribuição científica
-que há nisso.
+Perceba que essa imagem já traz uma forte evidência de uma das afirmações (a de
+a luz não escapar). Um físico poderia descrever quantas outras evidências se
+tem com essa pequena imagem, mas já dá para entender o nível da contribuição
+científica que há nisso.
 
 E o que isso tem a ver com Software Livre? Aí que vem uma das partes mais
 interessantes: [o código-fonte da biblioteca que deu origem a essa foto **é
-aberto**](https://github.com/achael/eht-imaging), e sob licença GPLv3! Ou seja,
-qualquer um pode ver o que deu origem a essa pesquisa, e poderia fazê-lo desde
-muitos anos antes de conseguirem essa foto, e isso **não impediu**, de maneira
-alguma, a pesquisa de ser um marco histórico impressionante para a física. Se
-ser livre não impediu de se concretizar como marco histórico um projeto tão
-importante que qualquer físico astrônomo adoraria ter seu nome nele, e ainda
-dando o reconhecimento aos seus pesquisadores, por que tantos outros seriam
-prejudicados?
+aberto**](https://github.com/achael/eht-imaging), e sob licença GPLv3 (que é
+uma licença de Software Livre)! Ou seja, qualquer um pode ver o que deu origem
+a essa pesquisa, e poderia fazê-lo desde muitos anos antes de conseguirem essa
+foto, e isso **não impediu**, de maneira alguma, a pesquisa de ser um marco
+histórico impressionante para a física. Se ser livre não impediu de se
+concretizar como marco histórico um projeto tão importante que qualquer físico
+astrônomo adoraria ter seu nome nele, e ainda dando o reconhecimento aos seus
+pesquisadores, por que tantos outros seriam prejudicados?
 
 Pare ainda para pensar no que isso tudo significa:
 - Qualquer um pode **contribuir** para a pesquisa (tendo os pesquisadores ainda
@@ -279,7 +279,7 @@ não-livres](https://www.gnu.org/licenses/license-list.html), e de bônus, para
 quando precisar escolher uma licença, o GitHub disponibiliza um [guia rápido de
 como escolher uma licença](https://choosealicense.com/). O GitHub tem sido uma
 plataforma bastante importante no fomento de Software Livre, tanto que, além
-dos guias já citados, há também um [guia de como contribuir para projetos Open
+dos guias já citados, fez também um [guia de como contribuir para projetos Open
 Source](https://opensource.guide/). Ficam então essas sugestões de leitura,
 caso queira dar os primeiros passos na contribuição para um mundo de Software
 Livre.
