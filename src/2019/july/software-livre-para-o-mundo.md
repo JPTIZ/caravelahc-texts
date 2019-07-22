@@ -230,7 +230,7 @@ programa a executar quaisquer instruções que ele quisesse). Apesar da boa
 notícia sobre a correção, como não se tem acesso ao código-fonte, não se é
 possível auditar nem se a correção está realmente sendo aplicada, nem se ela
 não acabou por introduzir outras brechas de segurança, e nem mesmo se ela de
-fato corrige o problema de fato.
+fato corrige o problema.
 
 Para complementar, o que é muito intrigante, **a própria Microsoft tem aderido
 ao mundo Open Source**! Para sumarizar as últimas decisões desde que o novo
