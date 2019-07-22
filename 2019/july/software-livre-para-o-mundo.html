@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Software Livre para o mundo - Blog do CaravelaHC</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../../2019/index.html"><strong aria-hidden="true">1.</strong> 2019</a></li><li><ol class="section"><li><a href="../../2019/july/index.html"><strong aria-hidden="true">1.1.</strong> Julho</a></li><li><ol class="section"><li><a href="../../2019/july/software-livre-para-o-mundo.html" class="active"><strong aria-hidden="true">1.1.1.</strong> Software Livre para o mundo</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Blog do CaravelaHC</h1>
+
+                        <div class="right-buttons">
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#software-livre-para-o-mundo" id="software-livre-para-o-mundo">Software Livre para o mundo</a></h1>
+<p>Como primeiro texto do Caravela HC, o tema não poderia deixar de ser Software
+Livre. É importante tocar nesse tema pois tanto para a comunidade quanto para a
+própria universidade algumas coisas ainda não são claras: por que lutar por
+Software Livre? Qual o propósito e a vantagem? O que isso impacta nas
+estruturas já estabelecidas do mercado e da política, na segurança, na
+propriedade do conhecimento, dentre tantos outros fatores? Tentaremos ilustrar
+um pouco disso neste primeiro texto, mas grande parte dessas perguntas
+responderemos com nossas atitudes por vir. Aqui, então, vai uma pincelada sobre
+o potencial imenso que há nas iniciativas de Software Livre.</p>
+<h2><a class="header" href="#livre-quer-dizer-livre" id="livre-quer-dizer-livre">Livre quer dizer LIVRE</a></h2>
+<p>As definições de categorias de softwares que utilizaremos daqui para frente
+serão, de maneira bem justa, as da <em>Free Software Foundation</em> (FSF), começando
+com a de Software Livre:</p>
+<blockquote>
+<p><em>&quot;Free software is software that comes with permission for anyone to use,
+copy, and/or distribute, either verbatim or with modifications, either gratis
+or for a fee. &quot;</em> - <a href="https://www.gnu.org/philosophy/categories.en.html">Free Software Foundation - Categories of free and nonfree
+software</a></p>
+</blockquote>
+<p>Ou, em tradução livre: <em>&quot;Software livre é software que dê permissão para
+qualquer um usar, copiar, e/ou distribuir, seja na íntegra ou com modificações,
+seja gratuito ou por uma taxa&quot;</em>. O termo em inglês, <em>free</em>, gera uma certa
+confusão por significar tanto &quot;gratuito&quot; quanto &quot;livre&quot;. Nesse sentido,
+seguindo a própria referência da FSF, há de se destacar que Software Livre não
+se trata de ser gratuito. Por exemplo, ao comprar um notebook que venha com
+Windows pré-instalado e o pacote Office completo, isso não os faz livres e nem
+mesmo gratuitos: o que os tornaria livres é <strong>a relação de liberdade que existe
+no seu uso</strong>, e não na falsa-gratuidade (afinal, ambos o Windows e os pacotes
+Office continuam sendo pagos, além de que seu preço está embutido no do
+notebook).</p>
+<p>Para entender sobre essa liberdade de uso, veja <a href="https://www.gnu.org/philosophy/free-sw.html">as 4 liberdades que definem um
+software como livre</a>:</p>
+<ul>
+<li><strong>Liberdade 0:</strong> A liberdade de executar o programa como quiser, para
+qualquer propósito;</li>
+<li><strong>Liberdade 1:</strong> A liberdade de estudar como o programa funciona, e mudá-lo
+para fazer a computação que você quiser. Acesso ao código-fonte é uma
+pré-condição para isso;</li>
+<li><strong>Liberdade 2:</strong> A liberdade de redistribuir cópias para que você possa
+ajudar outros;</li>
+<li><strong>Liberdade 3:</strong> A liberdade de distribuir cópias de suas versões modificadas
+para outros. Fazendo isso, você pode dar a toda uma comunidade a chance de se
+beneficiar com suas mudanças. Acesso ao código-fonte é uma pré-condição para
+isso.</li>
+</ul>
+<p>Qualquer software que viole alguma dessas liberdades é considerado <strong>Software
+Proprietário</strong> (não confundir com Software Comercial) ou <strong>Software
+Não-Livre</strong>. Ou seja, restrições no uso, necessidade de permissão, ou excesso
+de restrições são o suficiente para desclassificar um software como Livre.
+Portanto a <strong>licença</strong>, muito mais do que o preço, determina a liberdade de um
+Software. Agora, é claro, boa parte dos softwares livres tendem a ser
+gratuitos, uma vez que ser livre (e portanto de código-aberto) e ser gratuito
+são características que se alinham de forma bastante natural.</p>
+<h2><a class="header" href="#software-livre-para-uma-ciência-melhor" id="software-livre-para-uma-ciência-melhor">Software Livre para uma Ciência melhor</a></h2>
+<p>Ciência, como forma de buscar verdade, de tentar nos livrar da ignorância,
+seria inconsistente se fosse feita para apenas algumas pessoas. Apesar de que a
+forma como fazemos ciência depende muito da publicação de artigos, da inovação,
+e portanto se tende a ser conservador quanto a liberação de qualquer informação
+a respeito de uma linha de pesquisa, Softwares Livres não atrapalham nesse
+quesito. Inclusive, Softwares Livres tem apenas a contribuir para a ciência.</p>
+<h3><a class="header" href="#um-exemplo-pesquisas-com-buracos-negros" id="um-exemplo-pesquisas-com-buracos-negros">Um exemplo: pesquisas com buracos negros</a></h3>
+<p>Tomemos como exemplo real <a href="https://www.theguardian.com/science/2019/apr/10/black-hole-picture-captured-for-first-time-in-space-breakthrough">o caso da primeira imagem de buraco
+negro</a>.
+Durante anos e anos os físicos não tinham como ver realmente um buraco negro,
+então era necessário prever como seria sua forma visualmente. Isso era feito
+partindo do princípio que toda teoria em torno desse tema estaria correta
+(lembre-se de que estamos falando de corpos celestes a distâncias absurdas),
+por exemplo: se a densidade (quantidade de massa em um determinado espaço) de
+um buraco negro fosse realmente tão, mas tão grande, sua gravidade seria tanta
+que nem mesmo a luz escaparia dele e assim seu centro seria completamente
+escuro (por isso o nome &quot;buraco negro&quot;). Então, em abril de 2019, estava lá:
+pesquisadores conseguiram, através de uma pesquisa bem complexa, a primeira
+imagem de um buraco negro na história humana:</p>
+<p><img src="https://i.guim.co.uk/img/media/ddda0e5745cba9e3248f0e27b3946f14c4d5bc04/108_0_7200_4320/master/7200.jpg?width=620&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=6a24f6bba6bbc15e7ebd24bb0b46d158" alt="Imagem do buraco negro" /></p>
+<p>Perceba que essa imagem já traz uma forte evidência de uma das afirmações (a de
+a luz não escapar). Um físico poderia descrever quantas outras evidências se
+tem com essa pequena imagem, mas já dá para entender o nível da contribuição
+científica que há nisso.</p>
+<p>E o que isso tem a ver com Software Livre? Aí que vem uma das partes mais
+interessantes: <a href="https://github.com/achael/eht-imaging">o código-fonte da biblioteca que deu origem a essa foto <strong>é
+aberto</strong></a>, e sob licença GPLv3 (que é
+uma licença de Software Livre)! Ou seja, qualquer um pode ver o que deu origem
+a essa pesquisa, e poderia fazê-lo desde muitos anos antes de conseguirem essa
+foto, e isso <strong>não impediu</strong>, de maneira alguma, a pesquisa de ser um marco
+histórico impressionante para a física. Se ser livre não impediu de se
+concretizar como marco histórico um projeto tão importante que qualquer físico
+astrônomo adoraria ter seu nome nele, e ainda dando o reconhecimento aos seus
+pesquisadores, por que tantos outros seriam prejudicados?</p>
+<p>Pare ainda para pensar no que isso tudo significa:</p>
+<ul>
+<li>Qualquer um pode <strong>contribuir</strong> para a pesquisa (tendo os pesquisadores ainda
+que avaliar a contribuição antes de aprová-la, claro);</li>
+<li>Qualquer um pode <strong>conhecer</strong> como foi feito. Há linhas e linhas de código
+Python que podem ser analisadas e ainda podem <strong>melhorar a qualidade de
+outras pesquisas</strong>. E isso de graça, sem elitismos, sem barreiras
+arbitrárias: é conhecimento para a humanidade!</li>
+<li>A pesquisa se torna mais <strong>auditável</strong> e <strong>reprodutível</strong>, uma vez que todos
+podem ver exatamente o que deu origem aos resultados. E vale lembrar que
+<strong>reprodutibilidade é um dos pilares da ciência</strong>!</li>
+<li>Há um apelo maior à divulgação e acompanhamento científico, perceba: o
+repositório conta, no momento, com 215 <em>watchers</em>, +5000 <em>stars</em> e 452
+<em>forks</em>. Quantos outros projetos de pesquisa científica não poderiam chegar
+mais facilmente na comunidade se estivessem disponíveis? Imagine diferentes
+pessoas em seus <em>feeds</em> do GitHub vendo que um amigo deu <em>star</em> em um
+repositório de pesquisa que pareça interessante. Muito provavelmente aquela
+pessoa vai querer se aventurar pelo repositório na curiosidade de ver o que
+está sendo feito naquela pesquisa.</li>
+</ul>
+<p>Vale destacar também o <a href="https://codeisscience.github.io/manifesto/manifesto.html">manifesto &quot;Código é
+Ciência&quot;</a>, que
+ressalta um pouco desses pontos. Esse manifesto foi apresentado na GCCBOSC 2018
+(<em>Galaxy Community Conference and Bioinformatics Open Source Conference</em>), com
+a <a href="https://www.youtube.com/watch?v=-YSNCERgFFc&amp;list=PLir-OOQiOhXaHvCY_KYshsOMULuXDqvh7&amp;index=38&amp;t=0s">palestra de apresentação disponível no
+YouTube</a>.</p>
+<h3><a class="header" href="#perpetuação-do-conhecimento-e-avanço-tecnológico" id="perpetuação-do-conhecimento-e-avanço-tecnológico">Perpetuação do conhecimento e avanço tecnológico</a></h3>
+<p>Ciência gera conhecimento e com ele avançamos nossa tecnologia e sociedade,
+portanto se privamos a comunidade do que é feito na ciência, estamos reduzindo
+nossas chances de termos esses dois avanços. Por exemplo: se, por algum motivo,
+perdemos as pessoas que são &quot;donas&quot; de um conhecimento (no sentido de serem as
+únicas que tem acesso a ele), perdemos também o próprio conhecimento, e não é
+possível prever quando ele será redescoberto. Software e código são muito
+análogos à ciência: são conhecimento, propiciam avanços na tecnologia e, se
+perdemos nossa base de dados, nosso código, perdemos também esse conhecimento
+(que sabe-se lá quando será recuperado).</p>
+<p>Se pensarmos ainda na questão de projeto de processadores, há componentes em um
+Intel, mesmo um moderno, que são antigos e nenhum compilador gera instruções
+que os usem, mas por que eles ainda estão lá? Um dos motivos é o fato de que
+trechos muito antigos de programas importantes (mesmo de SOs) ainda são
+utilizados e distribuídos na forma de um binário compilado, porém o
+código-fonte deles se perdeu, ou seja: não é possível recompilá-los e gerar um
+novo binário sem aquelas instruções! Isso impede, então, que a Intel
+simplifique partes de seus processadores por precisar atender a esses binários.
+Isso impacta no mercado e no consumo: no final você paga a mais num processador
+por transistores virtualmente desnecessários.</p>
+<p>Em uma comunidade ativa de Software Livre, porém, seria bem possível que cópias
+desses códigos-fonte estivessem distribuídas entre diferentes usuários, e
+portanto salva de alguma forma. Não há garantia de que isso aconteça, claro,
+mas a chance de se preservar esse código-fonte é maior, especialmente em
+sistemas distribuídos, como o <a href="https://git-scm.com">Git</a>, em que literalmente
+cada cópia de um projeto versionado é independente e, para começar a contribuir
+para ele, você quase sempre fará uma cópia.</p>
+<h2><a class="header" href="#pago-não-quer-dizer-melhor" id="pago-não-quer-dizer-melhor">&quot;Pago&quot; não quer dizer melhor</a></h2>
+<p>Um dos fatores mais interessantes é que se costuma dizer que algo é melhor por
+ser pago. Mas isso está longe de ser realidade, e exemplos claros disso são o
+GCC e Clang (compiladores de C e C++), por exemplo: todo o <em>standard</em> mais
+recente de C++ está implementado sempre mais cedo neles do que suas
+alternativas proprietárias (principalmente em relação ao compilador da
+Embarcadero, que era originalmente da Borland), e são ainda referências no
+quesito otimização, num ponto em que as melhores otimizações para código C e
+C++ estão neles. Essa diferença fica bem clara quando se olha o <a href="https://en.cppreference.com/w/cpp/compiler_support">suporte dos
+compiladores à features de
+C++</a>. Por fim, no quesito
+confiabilidade, a FSF possui <a href="https://www.gnu.org/software/reliability.html">um artigo sobre como Software Livre é mais
+confiável</a>.</p>
+<h2><a class="header" href="#software-livre-não-vai-quebrar-sua-empresa" id="software-livre-não-vai-quebrar-sua-empresa">Software Livre não vai quebrar sua empresa</a></h2>
+<p>Sem chegar no ponto de, como já citado, terem empresas que desenvolvem Software
+Proprietário mesmo tendo alternativas livres definitivamente melhores (às vezes
+por questão de conveniência para uma plataforma específica), é totalmente
+possível estar no mercado desenvolvendo Software Livre dedicadamente. É o caso
+do <a href="https://rocket.chat/">RocketChat</a>, que é legitimamente uma empresa
+desenvolvendo um Software Livre que conta com <a href="https://rocket.chat/team">uma equipe de membros de
+diferentes países</a>.</p>
+<p>Indo além do fato de que a empresa pode receber contribuições sem que haja
+custo para elas, podemos pensar pelo lado de recrutamento: como já há quem
+contribua para o software, fica mais fácil escolher quem contratar e,
+inclusive, familiarizar o novo empregado com a cultura da empresa
+(<em>onboarding</em>), além de que terá um maior conhecimento sobre a base de código
+do software e seu funcionamento. Não significa que seja algo aplicável a todo
+modelo de negócios, mas sim que é viável para vários casos.</p>
+<p>Um fator interessante de Softwares Livres é que com eles se entende que o real
+valor de um software não está no programa final: ele já foi compilado, não há o
+trabalho de produção como o caso de peças de máquinas e etc. O real valor está
+no <strong>processo de produção</strong> e nas <strong>garantias</strong> (manutenção e serviço de
+suporte ao usuário, por exemplo): você é pago para desenvolver software e por
+oferecer serviços relacionados a ele, não por ter compilado um código-fonte uma
+vez. O que o RocketChat faz, por exemplo, é deixar livre para você fazer o que
+quiser - até mesmo criar sua própria instância de RocketChat no seu servidor,
+mas caso queira, você pode alugar um servidor deles - e aí é que entra o
+pagamento.</p>
+<p>Além disso, o que foi dito sobre Software Livre na ciência pode ser reiterado
+na questão de empresas: como seu produto pode ser auditado, isso dá maiores
+garantias de confiabilidade e qualidade. Um pouco da falta de possibilitar
+auditoria é comentada por Pavel Durov, criador do Telegram, em uma postagem
+sobre <a href="https://telegra.ph/Why-WhatsApp-Will-Never-Be-Secure-05-15">por que o WhatsApp nunca poderá ser
+seguro</a>, por
+exemplo, nas palavras dele (em tradução livre):</p>
+<blockquote>
+<p><em>&quot;Diferente do Telegram, o WhatsApp não é de código-aberto, e portanto não
+há como pesquisadores de segurança verificarem se há <em>backdoors²</em> no
+código&quot;.</em></p>
+</blockquote>
+<p><em>²Backdoors são brechas de segurança que possibilitam passar por cima dos
+métodos de autenticação de algum programa.</em></p>
+<p>E, de fato, essa verificação é complicada e fica quase que completamente a
+cargo da equipe que trabalha no software. Por exemplo, em uma das últimas
+atualizações do WhatsApp, uma das correções foi a da falha de segurança
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3568">CVE-2019-3568</a>,
+que permitia execução de código arbitrário (i.e. o atacante poderia forçar o
+programa a executar quaisquer instruções que ele quisesse). Apesar da boa
+notícia sobre a correção, como não se tem acesso ao código-fonte, não se é
+possível auditar nem se a correção está realmente sendo aplicada, nem se ela
+não acabou por introduzir outras brechas de segurança, e nem mesmo se ela de
+fato corrige o problema.</p>
+<p>Para complementar, o que é muito intrigante, <strong>a própria Microsoft tem aderido
+ao mundo Open Source</strong>! Para sumarizar as últimas decisões desde que o novo
+CEO, Satya Nadella, assumiu:</p>
+<ol>
+<li>Foram liberados os códigos-fonte de alguns dos produtos, desde a
+<a href="https://github.com/microsoft/calculator">calculadora do Windows</a> até o
+<a href="https://github.com/microsoft/qsharp-compiler">compilador de Q#</a> (linguagem
+para descrição de programas para computadores quânticos - pense nisso
+enquanto lembra o que foi falado sobre pesquisa);</li>
+<li>Foi criado o <a href="https://code.visualstudio.com">Visual Studio Code</a>, um editor
+de código gratuito bastante potente com suporte nativo e descomplicado a
+plugins e melhorias, com potencial para se igualar a muitas IDEs de ponta;</li>
+<li>Foram inseridos, no Windows, programas comuns e até mesmo nativos de
+distribuições Linux, como <a href="https://www.theverge.com/2019/5/6/18534687/microsoft-windows-10-linux-kernel-feature">um terminal Bash e
+OpenSSH</a>.</li>
+<li>Por fim, não poderíamos deixar de citar <a href="https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/">a compra do GitHub pela
+Microsoft</a>
+no ano passado, que manteve a liberdade da plataforma e até mesmo <a href="https://github.blog/2019-01-07-new-year-new-github://github.blog/2019-01-07-new-year-new-github/">tornou
+gratuitas algumas
+funcionalidades</a>.</li>
+</ol>
+<h2><a class="header" href="#para-finalizar" id="para-finalizar">Para finalizar</a></h2>
+<p>Podemos falar mais e mais sobre esse assunto, incluindo o impacto de Software
+Livre e Open-Source na inclusão, na capacitação de jovens, e em vários outros
+aspectos, mas para este artigo já temos bastante coisa. Se quiser começar a
+utilizar Softwares Livres, eis uma pequena lista de softwares interessantes:</p>
+<ul>
+<li>Distribuições Linux:
+<ul>
+<li><a href="https://manjaro.org">Manjaro</a>, baseada no <a href="https://http://archlinux.org">ArchLinux</a>;</li>
+</ul>
+</li>
+<li>Ilustração e pintura digital:
+<ul>
+<li><a href="https://krita.org">Krita</a>.</li>
+</ul>
+</li>
+<li>Modelagem 3D:
+<ul>
+<li><a href="https://blender.org">Blender</a> (também para animação, edição de vídeos e
+<a href="https://www.youtube.com/watch?v=tZnUgt659oI">esculturas</a>).</li>
+</ul>
+</li>
+<li>Edição de imagens:
+<ul>
+<li>Para não-vetorizadas: <a href="https://www.gimp.org/">GIMP</a>;</li>
+<li>Para vetorizadas: <a href="https://inkscape.org/">Inkscape</a>.</li>
+</ul>
+</li>
+<li>Edição de vídeo:
+<ul>
+<li><a href="https://kdenlive.org/">KDEnlive</a>.</li>
+</ul>
+</li>
+<li>Edição de áudio:
+<ul>
+<li><a href="https://www.audacityteam.org">Audacity</a>.</li>
+</ul>
+</li>
+<li>Editores de código:
+<ul>
+<li><a href="https//code.visualstudio.com">VSCode</a>¹;</li>
+<li><a href="https://atom.io">Atom</a>;</li>
+<li><a href="https://vim.org">Vim</a> (para terminal);</li>
+<li><a href="https://emacs.org">Emacs</a> (tanto com interface gráfica quanto para
+terminal).</li>
+</ul>
+</li>
+<li>Ferramentas de escritório:
+<ul>
+<li><a href="https://www.libreoffice.org/">LibreOffice</a>;</li>
+<li><a href="https://www.openoffice.org">OpenOffice</a>.</li>
+</ul>
+</li>
+<li>Navegador:
+<ul>
+<li><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>.</li>
+</ul>
+</li>
+</ul>
+<p><em>²: O código-fonte é livre, os binários distribuídos pela MS são freeware.</em></p>
+<p>Caso tenha ficado curioso sobre quais licenças são caracterizadas como Livres,
+a própria FSF tem uma <a href="https://www.gnu.org/licenses/license-list.html">lista de licenças livres e
+não-livres</a>, e de bônus, para
+quando precisar escolher uma licença, o GitHub disponibiliza um <a href="https://choosealicense.com/">guia rápido de
+como escolher uma licença</a>. O GitHub tem sido uma
+plataforma bastante importante no fomento de Software Livre, tanto que, além
+dos guias já citados, fez também um <a href="https://opensource.guide/">guia de como contribuir para projetos Open
+Source</a>. Ficam então essas sugestões de leitura,
+caso queira dar os primeiros passos na contribuição para um mundo de Software
+Livre.</p>
+<p>Por fim, segue nosso final recado:</p>
+<blockquote>
+<p>Software é conhecimento, e conhecimento deve ser livre.</p>
+</blockquote>
+<p>Esperamos que tenham gostado da leitura, e até daqui a duas semanas!</p>
+<h2><a class="header" href="#leituras-extras" id="leituras-extras">Leituras extras</a></h2>
+<ol>
+<li><a href="https://www.gnu.org/philosophy/free-sw.html">What is free software?</a> - FSF</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../2019/july/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../2019/july/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
