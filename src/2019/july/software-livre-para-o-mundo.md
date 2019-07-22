@@ -37,14 +37,17 @@ notebook).
 
 Para entender sobre essa liberdade de uso, veja [as 4 liberdades que definem um
 software como livre](https://www.gnu.org/philosophy/free-sw.html):
-0. A liberdade de executar o programa como quiser, para qualquer propósito;
-1. A liberdade de estudar como o programa funciona, e mudá-lo para fazer a
-   computação que você quiser. Acesso ao código-fonte é uma pré-condição para
-   isso;
-2. A liberdade de redistribuir cópias para que você possa ajudar outros;
-3. A liberdade de distribuir cópias de suas versões modificadas para outros.
-   Fazendo isso, você pode dar a toda uma comunidade a chance de se beneficiar
-   com suas mudanças. Acesso ao código-fonte é uma pré-condição para isso.
+- **Liberdade 0:** A liberdade de executar o programa como quiser, para
+  qualquer propósito;
+- **Liberdade 1:** A liberdade de estudar como o programa funciona, e mudá-lo
+  para fazer a computação que você quiser. Acesso ao código-fonte é uma
+  pré-condição para isso;
+- **Liberdade 2:** A liberdade de redistribuir cópias para que você possa
+  ajudar outros;
+- **Liberdade 3:** A liberdade de distribuir cópias de suas versões modificadas
+  para outros. Fazendo isso, você pode dar a toda uma comunidade a chance de se
+  beneficiar com suas mudanças. Acesso ao código-fonte é uma pré-condição para
+  isso.
 
 Qualquer software que viole alguma dessas liberdades é considerado **Software
 Proprietário** (não confundir com Software Comercial) ou **Software
@@ -257,24 +260,33 @@ Livre e Open-Source na inclusão, na capacitação de jovens, e em vários outro
 aspectos, mas para este artigo já temos bastante coisa. Se quiser começar a
 utilizar Softwares Livres, eis uma pequena lista de softwares interessantes:
 
-- Distribuições Linux: [Manjaro](https://manjaro.org), baseada no
-  [ArchLinux](https://http://archlinux.org);
-- Ilustração e pintura digital: [Krita](https://krita.org);
-- Modelagem 3D: [Blender](https://blender.org) (também para animação, edição de
-  vídeos e [esculturas](https://www.youtube.com/watch?v=tZnUgt659oI));
-- Edição de imagens: [GIMP](https://www.gimp.org/) e, para vetorizadas,
-  [Inkscape](https://inkscape.org/);
-- Edição de vídeo: [KDEnlive](https://kdenlive.org/);
-- Edição de áudio: [Audacity](https://www.audacityteam.org);
-- Editores de código: [VSCode](https//code.visualstudio.com)¹,
-  [Atom](https://atom.io), [Vim](https://vim.org) (para terminal) e
-  [Emacs](https://emacs.org) (tanto com interface gráfica quanto para
-  terminal);
-- Ferramentas de escritório: [LibreOffice](https://www.libreoffice.org/) e
-  [OpenOffice](https://www.openoffice.org);
-- Navegador: [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+- Distribuições Linux:
+  - [Manjaro](https://manjaro.org), baseada no [ArchLinux](https://http://archlinux.org);
+- Ilustração e pintura digital:
+  - [Krita](https://krita.org).
+- Modelagem 3D:
+  - [Blender](https://blender.org) (também para animação, edição de vídeos e
+    [esculturas](https://www.youtube.com/watch?v=tZnUgt659oI)).
+- Edição de imagens:
+  - Para não-vetorizadas: [GIMP](https://www.gimp.org/);
+  - Para vetorizadas: [Inkscape](https://inkscape.org/).
+- Edição de vídeo:
+  - [KDEnlive](https://kdenlive.org/).
+- Edição de áudio:
+  - [Audacity](https://www.audacityteam.org).
+- Editores de código:
+  - [VSCode](https//code.visualstudio.com)¹;
+  - [Atom](https://atom.io);
+  - [Vim](https://vim.org) (para terminal);
+  - [Emacs](https://emacs.org) (tanto com interface gráfica quanto para
+    terminal).
+- Ferramentas de escritório:
+  - [LibreOffice](https://www.libreoffice.org/);
+  - [OpenOffice](https://www.openoffice.org).
+- Navegador:
+  - [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 
-_²: O código-fonte é livre, os binários distribuídos são freeware._
+_²: O código-fonte é livre, os binários distribuídos pela MS são freeware._
 
 Caso tenha ficado curioso sobre quais licenças são caracterizadas como Livres,
 a própria FSF tem uma [lista de licenças livres e
