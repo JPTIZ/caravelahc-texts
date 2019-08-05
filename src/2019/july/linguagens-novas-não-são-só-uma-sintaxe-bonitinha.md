@@ -31,8 +31,7 @@ relevantes para este tópico, quando falarmos "linguagens de programação"
 Vejamos então quais eram as preocupações dos projetistas de linguagens de
 programação ao longo do tempo.
 
-Primeira Geração de Linguagens
-------------------------------
+### Primeira Geração de Linguagens
 
 Boa parte das linguagens de programação da década de 1940 eram apenas
 protótipos teóricos, a preocupação era muito mais explorar modelos de descrever
@@ -56,15 +55,13 @@ Apesar de ser uma linguagem de alto-nível, a representação ainda lida muito c
 número de bits das variáveis (`:32`), a sintaxe não era muito complexa (se você
 entender o código acima, você entendeu praticamente a linguagem toda). Ao longo
 da década de 1950 outras linguagens surgiram, como **[Short
-Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language)) (1952)**, e
-a tão conhecida **[FORTRAN](https://en.wikipedia.org/wiki/Fortran) (1957)**. A
-primeira especificação de FORTRAN era quase literalmente definir equações, a
+Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language)) (1952)**,
+**[GEORGE](https://en.wikipedia.org/wiki/GEORGE_(programming_language))
+(1957)** e então a tão conhecida
+**[Fortran](https://en.wikipedia.org/wiki/Fortran) (1957)**. A primeira
+especificação de Fortran (FORTRAN I) era quase literalmente definir equações, a
 exemplo de que aquela mesma equação acima era seria simplesmente `Y = A * X * X
 + B * X + C`.
-
-
-
-
 
 
 Ideas
