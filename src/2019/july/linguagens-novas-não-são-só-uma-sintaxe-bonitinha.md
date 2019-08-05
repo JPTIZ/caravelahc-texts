@@ -20,8 +20,8 @@ de linguagens para softwares de verdade?
 Ou melhor: o que estamos negando aos softwares de verdade ao tratá-las dessa
 forma?
 
-Gerações de inguagens de programação
-------------------------------------
+Gerações de linguagens de programação
+-------------------------------------
 
 Primeiramente, não só pela história de linguagnes de programação é **longa** e
 bem complexa, mas também pelo fato de que outros tipos de linguagem não são
@@ -29,13 +29,15 @@ relevantes para este tópico, quando falarmos "linguagens de programação"
 **estaremos nos referindo apenas às linguagens de alto-nível**.
 
 Vejamos então quais eram as preocupações dos projetistas de linguagens de
-programação ao longo do tempo.
+programação ao longo do tempo. Separarei aqui em "gerações", mas é uma
+separação completamente arbitrária e minha, separando as gerações por "qual a
+preocupação do projetista".
 
-### Primeira Geração de Linguagens
+### 1ª Geração: Linguagens para cartão perfurado
 
 Boa parte das linguagens de programação da década de 1940 eram apenas
 protótipos teóricos, a preocupação era muito mais explorar modelos de descrever
-computações que fossem fáceis de um humano transformar em código de máquina.
+computações que fossem **fáceis de um humano traduzir para código de máquina**.
 **[Plankalkül](https://en.wikipedia.org/wiki/Plankalk%C3%BCl) (1948)**, por
 exemplo, só foi ser verdadeiramente implementada em 1998 (apesar de que isso é
 mais por não terem utilizado a máquina para qual a linguagem havia sido
@@ -52,9 +54,9 @@ P1 func (V0[:32.0],V1[:32.0],V2[:32.0],V3[:32.0]) => R0[:32.0]
 ```
 
 Apesar de ser uma linguagem de alto-nível, a representação ainda lida muito com
-número de bits das variáveis (`:32`), a sintaxe não era muito complexa (se você
-entender o código acima, você entendeu praticamente a linguagem toda). Ao longo
-da década de 1950 outras linguagens surgiram, como **[Short
+número de bits das variáveis (`:32`) e as construções não eram muito complexas
+(se você entender o código acima, você entendeu praticamente a linguagem toda).
+Ao longo da década de 1950 outras linguagens surgiram, como **[Short
 Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language)) (1952)**,
 **[GEORGE](https://en.wikipedia.org/wiki/GEORGE_(programming_language))
 (1957)** e então a tão conhecida
@@ -63,6 +65,11 @@ especificação de Fortran (FORTRAN I) era quase literalmente definir equações
 exemplo de que aquela mesma equação acima era seria simplesmente `Y = A * X * X
 + B * X + C`.
 
+### 2ª Geração: Linguagens para algoritmos
+
+- Grace Hopper, compiladores e automatização;
+- Código para seres humanos;
+- Abstração da máquina alvo muito maior.
 
 Ideas
 -----
