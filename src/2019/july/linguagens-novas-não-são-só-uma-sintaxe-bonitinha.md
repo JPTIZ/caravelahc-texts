@@ -1,5 +1,5 @@
-Linguagens novas não são só "uma sintaxe bonitinha"
-===================================================
+Linguagens modernas: só "uma nova sintaxe"?
+===========================================
 
 _Por Tiz_
 
@@ -8,14 +8,14 @@ modernas, algumas pessoas na área de tecnologia acabam olhando para a novidade
 como uma perda de tempo, uma mera "brincadeira de novato". Programadores Python
 e JavaScript chegam a ser chamados pejorativamente de "moderninhos" por algumas
 dessas pessoas, que reforçam que suas linguagens de costume são mais
-compensadoras, seja pela fama, pela performance, ou porque "dá pra fazer as
-mesmas coisas nela", em um olhar de "coisa de adulto".
+compensadoras, seja pela fama, pela performance, porque "dá pra fazer as mesmas
+coisas nela", ou simplesmente por não verem a necessidade na novidade.
 
 Até onde essas pessoas tem razão? Linguagens modernas, sejam as
-_garbage-collected_, sejam as com omissão de tipos, são para brincar, sobrando
-as linguagens _mainstream_ de tipagem estática, com aritmética de ponteiros,
-bem consolidadas a partir dos anos 80 e 90, e por aí vai, como representantes
-de linguagens para softwares de verdade?
+_garbage-collected_ e/ou com omissão de tipos, são para brincar, sobrando as
+linguagens _mainstream_ de tipagem estática com aritmética de ponteiros, bem
+consolidadas a partir dos anos 80 e 90, e por aí vai, como representantes de
+linguagens para softwares de verdade?
 
 Ou melhor: o que estamos negando aos softwares de verdade ao tratá-las dessa
 forma?
@@ -26,7 +26,22 @@ Gerações de linguagens de programação
 Primeiramente, não só pela história de linguagnes de programação é **longa** e
 bem complexa, mas também pelo fato de que outros tipos de linguagem não são
 relevantes para este tópico, quando falarmos "linguagens de programação"
-**estaremos nos referindo apenas às linguagens de alto-nível**.
+**estaremos nos referindo apenas às de alto-nível**.
+
+Na década de 1940 e início da de 1950 tínhamos alguns protótipos de linguagens,
+como **[Plankalkül](https://en.wikipedia.org/wiki/Plankalk%C3%BCl) (1948)** e
+**[Short Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language))
+(1952)**. Como na época não tínhamos compiladores, todo o processo de traduzir
+o código em alto-nível para binário/hexadecimal e repassar para um cartão
+perfurado (que era basicamente a memória de instruções das máquinas da época)
+era completamente manual. Então, essas linguagens buscavam facilitar essa
+tradução por um ser humano.
+
+
+
+
+Old
+---
 
 Vejamos então quais eram as preocupações dos projetistas de linguagens de
 programação ao longo do tempo. Separarei aqui em "gerações", mas é uma
