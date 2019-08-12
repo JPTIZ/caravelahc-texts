@@ -23,59 +23,55 @@ forma?
 Gerações de linguagens de programação
 -------------------------------------
 
-Primeiramente, não só pela história de linguagnes de programação é **longa** e
+Primeiramente, não só pela história de linguagens de programação é **longa** e
 bem complexa, mas também pelo fato de que outros tipos de linguagem não são
 relevantes para este tópico, quando falarmos "linguagens de programação"
 **estaremos nos referindo apenas às de alto-nível**.
 
 Na década de 1940 e início da de 1950 tínhamos alguns protótipos de linguagens,
-como **[Plankalkül](https://en.wikipedia.org/wiki/Plankalk%C3%BCl) (1948)** e
-**[Short Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language))
-(1952)**. Como na época não tínhamos compiladores, todo o processo de traduzir
-o código em alto-nível para binário/hexadecimal e repassar para um cartão
-perfurado (que era basicamente a memória de instruções das máquinas da época)
-era completamente manual. Então, essas linguagens buscavam facilitar essa
-tradução por um ser humano.
+como **[Plankalkül](https://en.wikipedia.org/wiki/Plankalk%C3%BCl) (1948)**
+(que só foi efetivamente implementada em 1998) e **[Short
+Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language)) (1952)**.
+Como na época não tínhamos compiladores, todo o processo de traduzir o código
+em alto-nível para binário/hexadecimal e repassar para um cartão perfurado (que
+era basicamente a memória de instruções das máquinas da época) era
+completamente manual. Então, essas linguagens buscavam facilitar essa tradução
+para seres humanos.
 
+Quando, em 1952, Grace Hopper implementou o primeiro _linker_ (na época ele foi
+chamado de "compilador", mas pelos conceitos atuais ele se encaixa como um
+_linker_), que traduzia palavras em inglês para código de máquina, aos poucos a
+necessidade de facilitar a tradução humana vai diminuindo, especialmente depois
+da criação de **[Fortran](https://en.wikipedia.org/wiki/Fortran)**, cujo
+**rascunho** de sua especificação foi formulado em **1954** e seu primeiro
+compilador foi implementado em **1957** sendo o primeiro a realizar
+otimizações. Isso animou programadores de compiladores da época a escrever
+compiladores para Fortran, e assim, com novas ideias e recursos em novas
+edições de Fortran, as linguagens de programação foram tomando formas mais
+parecidas com as que estamos acostumados hoje, mas isso se falarmos apenas das
+imperativas.
 
+Ainda na década de 1950, temos o surgimento das primeiras noções de linguagens
+funcionais, como
+**[IPL](https://en.wikipedia.org/wiki/Information_Processing_Language)
+(1956)**, que introduz conceitos como manipulação de listas e funções de
+primeira-ordem (a grosso modo, tratar funções da mesma forma que você trata
+dados do ponto de vista de o que a linguagem permite fazer), e
+**[Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) (1958)**
+que, apesar de tudo, [não é
+funcional](https://letoverlambda.com/index.cl/guest/chap5.html), mas algumas
+características dela tendem a se aproximar desse paradigma. Em **1966** temos
+**[APL](https://en.wikipedia.org/wiki/APL_(programming_language))** (de "A
+Programming Language", fazendo um trocadilho com "Uma linguagem de
+programação"), que começou como simples notações matemáticas para manipulação
+de _arrays_.
 
+A linguagem C surge só em 1974,
 
 Old
 ---
 
-Vejamos então quais eram as preocupações dos projetistas de linguagens de
-programação ao longo do tempo. Separarei aqui em "gerações", mas é uma
-separação completamente arbitrária e minha, separando as gerações por "qual a
-preocupação do projetista".
-
-### 1ª Geração: Linguagens para cartão perfurado
-
-Boa parte das linguagens de programação da década de 1940 eram apenas
-protótipos teóricos, a preocupação era muito mais explorar modelos de descrever
-computações que fossem **fáceis de um humano traduzir para código de máquina**.
-**[Plankalkül](https://en.wikipedia.org/wiki/Plankalk%C3%BCl) (1948)**, por
-exemplo, só foi ser verdadeiramente implementada em 1998 (apesar de que isso é
-mais por não terem utilizado a máquina para qual a linguagem havia sido
-pensada: a [Z3](https://en.wikipedia.org/wiki/Z3_(computer))). Veja, se
-quiséssemos descrever:
-
-  $$y = ax^{2} + bx + c$$
-
-Em Plankalkül, nosso programa seria:
-
-```plankalkul
-P1 func (V0[:32.0],V1[:32.0],V2[:32.0],V3[:32.0]) => R0[:32.0]
-    V0[:32.0] * V1[:32.0] * V1[:32.0] + V2[:32.0] * V1[:32.0] + V3[:32.0] => R0[:32.0]
-```
-
-Apesar de ser uma linguagem de alto-nível, a representação ainda lida muito com
-número de bits das variáveis (`:32`) e as construções não eram muito complexas
-(se você entender o código acima, você entendeu praticamente a linguagem toda).
-Ao longo da década de 1950 outras linguagens surgiram, como **[Short
-Code](https://en.wikipedia.org/wiki/Short_Code_(computer_language)) (1952)**,
-**[GEORGE](https://en.wikipedia.org/wiki/GEORGE_(programming_language))
-(1957)** e então a tão conhecida
-**[Fortran](https://en.wikipedia.org/wiki/Fortran) (1957)**. A primeira
+. A primeira
 especificação de Fortran (FORTRAN I) era quase literalmente definir equações, a
 exemplo de que aquela mesma equação acima era seria simplesmente `Y = A * X * X
 + B * X + C`.
