@@ -138,7 +138,7 @@ Isso tem **sérios impactos** na qualidade dos programas de hoje em dia - não
 estamos falando de qualidade enquanto "um código bonitinho" -, mas já
 chegaremos lá.
 
-Pascal e JavaScript: nem tão novas nem tão modernas
+Python e JavaScript: nem tão novas nem tão modernas
 ---------------------------------------------------
 
 Continuando a linha do tempo, temos **C++ (1980)** estendendo C para dar
@@ -146,14 +146,14 @@ suporte a classes; **Eiffel (1985)** trazendo um sistema de testes totalmente
 checável em tempo de compilação (baseado na noção de [_Design by
 Contract_](https://en.wikipedia.org/wiki/Design_by_contract)); **Erlang
 (1986)** trazendo _pattern matching_ e alguns conceitos de programação
-funcional. Porém, por mais que comumente se diga que Python e JavaScript são
-"linguagens moderninhas" (de maneira pejorativa), essas linguagens surgem logo
-na década seguinte: Python em 1991 e JavaScript em 1995. PHP e Java, que nunca
-entram nesse conceito de "moderninhas", surgiram em 1995: o mesmo ano de
-JavaScript, e 4 anos posterior a Python!
+funcional. E então, por mais que comumente se diga que Python e JavaScript são
+"linguagens moderninhas", essas linguagens surgem logo na década seguinte:
+Python em 1991 e JavaScript em 1995. PHP e Java, que nunca entram nesse
+conceito de "moderninhas", surgiram em 1995: o mesmo ano de JavaScript, e 4
+anos posterior a Python!
 
-Boa parte da pejoratividade em chamar essas linguagens de moderninhas se baseia
-em questões como:
+É interessante analisar que boa parte da pejoratividade em chamar essas
+linguagens de moderninhas se baseia em questões como:
 
 - São linguagens dinamicamente tipadas;
 - Não exigem que tipos sejam explicitados;
@@ -165,13 +165,57 @@ infantis, porém essa visão é baseada em uma desinformação completa, veja:
 
 - Tipagem dinâmica já era presente em **APL** e **Lisp**, dos anos 1950 e 1960;
 - Já se tinham interpretadores para essas mesmas duas linguagens;
-- Novamente, APL e Lisp não possuiam um mecanismo para se explicitar tipos;
+- APL e Lisp não possuiam um mecanismo para se explicitar tipos;
 - Um interpretador completo de Lisp pode ser feito em menos [1000 linhas de
   código C](https://github.com/rui314/minilisp), ou seja, já tínhamos
   linguagens bastante simples e minimalistas há quase 40 anos.
 
+Então se há algo que se pode criticar programadores Python e JavaScript em
+termos de modernidade é justamente acreditar que estão utilizando _features_
+modernas quando elas já existem desde a metade do século passado. Nem mesmo
+_list-comprehensions_ de
+**[Haskell](https://en.wikipedia.org/wiki/Haskell_(programming_language))
+(1990)** são uma grande novidade, já que
+**[SETL](https://en.wikipedia.org/wiki/SETL) (1969)** já trazia essa _feature_.
+
+Qual é o ponto, então, de ver essas linguagens com maus olhos? Não há por que
+culpá-las pela performance, primeiramente porque Python só não é notavelmente
+mais otimizada pela sua flexibilidade e isso não necessariamente é um problema:
+o ganho com produtividade compensa, especialmente em _softwares_ cujo gargalo
+não seja processamento pesado. E quando for o gargalo, isso só significa que
+uma linguagem dinâmica demais como Python não é adequada, mas nesse quesito
+temos linguagens verdadeiramente modernas mais adequadas.
+
+Se formos culpá-las pelo excesso de simplicidade como alguns programadores
+Java fazem, argumentando que "escrever mais é uma vantagem": se critica toda a
+flexibilidade e falta de necessidade de se explicitar tipos, defendendo tipagem
+estática pelos motivos errados, porém quando se insere inferência de tipos em
+uma linguagem tão verbosa [saem notícias como se fossem features
+revolucionárias](https://blog.overops.com/how-java-10-will-change-the-way-you-code/).
+Novamente, qual é o ponto?
+
+A grande questão é que várias dessas _features_ não eram tão
+exploradas em linguagens _mainstream_ porque computadores antigamente não eram
+tão poderosos, porém muito se tem avançado em pesquisa na área de compiladores,
+o que tem permitido avanços significativos no poder de inferência de linguagens
+bastante antigas como C++, e esses mesmos avanços acabam impactando em **TODO**.
+
+Linguagens modernas, modernização das linguagens
+------------------------------------------------
+
+Se formos ser justos e realmente pensar na modernidade de linguagens, devemos
+considerar algumas ideias de projeto que visam **segurança**, um bom sistema de
+_build_ e expressividade. **[Rust]() (2010)** consegue trazer facilidade de se
+escrever até mesmo código paralelo com garantias de que todas as operações
+sejam _memory-safe_, ou seja, o compilador garante que o código escrito pelo
+programador está livre de acessos inválidos à memória (é impossível tomar um
+_segfault_!) e de erros relacionados a múltiplos processadores acessando um
+mesmo dado concorrentemente. Erros como esse já foram demonstrados
+
 Ideas
 -----
+
+https://medium.com/@sgrif/no-the-problem-isnt-bad-coders-ed4347810270
 
 Tínhamos problemas, nos encaixávamos neles, mas agora não os temos mais, então
 **let's move on**.
