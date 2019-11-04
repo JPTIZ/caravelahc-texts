@@ -315,7 +315,7 @@ Para onde vão as linguagens modernas
 
 Boa parte do progresso tem sido em cima de construir um **sistema de tipos**
 mais robusto, possivelmente pelo fato de que ele tem se mostrado uma ferramenta
-bastante e natural dentro de linguagens para fornecer segurança, capacidade de
+bastante natural dentro de linguagens para fornecer segurança, capacidade de
 performance (afinal, é uma das informações mais impactantes para seu compilador
 tomar decisões de quando pode otimizar - inclusive JITs, dependendo do caso), e
 ainda enriquecer as formas de descrever seu software.
