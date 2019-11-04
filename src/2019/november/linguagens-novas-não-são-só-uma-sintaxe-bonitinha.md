@@ -255,7 +255,7 @@ que justamente lista vulnerabilidades comuns), veremos o seguinte gráfico
 ![CVEs encontradas no Kernel Linux](/img/Linux-CVEs-in-2018.svg)
 
 Não há como negar que os desenvolvedores e avaliadores da base de código do
-kernel Linux são experientes: estamos falando inclusive de pessoas como Linux
+kernel Linux são experientes: estamos falando inclusive de pessoas como Linus
 Torvalds, afinal. E mesmo com isso, vulnerabilidades relacionadas a
 _memory-safety_ continuam passando. Mesmo com checagens, analisadores
 estáticos, _valgrind_ ou o que for. E não há como meramente culpar
