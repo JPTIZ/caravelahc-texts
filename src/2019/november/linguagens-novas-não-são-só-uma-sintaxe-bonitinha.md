@@ -221,12 +221,13 @@ considerar algumas ideias de projeto que visam **segurança**, um bom sistema de
 _build_ e expressividade. **[Rust](https://www.rust-lang.org/) (2010)** e
 **[Swift](https://swift.org/) (2014)** conseguem trazer facilidade de se
 escrever até mesmo código paralelo com garantias de que todas as operações
-sejam _memory-safe_ e _thread-safe_, ou seja, o compilador garante que o código
-escrito pelo programador está livre de acessos inválidos à memória (é mínima a
-possibilidade de ocorrer um _segfault_ - um erro de acesso inválido à memória
-bastante comum e muitas vezes difícil de identificar/tratar) e de erros
-relacionados a múltiplos processadores acessando um mesmo dado
-concorrentemente.
+sejam _memory-safe_ e - especificamente no caso de Rust - _thread-safe_. Ser
+_memory-safe_ significa que o compilador garante que o código escrito pelo
+programador está livre de acessos inválidos à memória (é mínima a possibilidade
+de ocorrer um _segfault_ - um erro de acesso inválido à memória bastante comum
+e muitas vezes difícil de identificar/tratar), enquanto ser _thread-safe_
+significa que o compilador garante que não hajam erros relacionados a múltiplos
+processadores acessando um mesmo dado concorrentemente.
 
 E por mais que exista um certo ego de programadores que acreditam veemente que
 esses problemas só existem para programadores novatos/ruins, vale lembrar de
