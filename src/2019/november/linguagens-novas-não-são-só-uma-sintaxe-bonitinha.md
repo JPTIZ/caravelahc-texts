@@ -297,9 +297,9 @@ a declaração de uma variável envolve reconhecer o tipo dela, então é necess
 que seja atribuir um valor (afinal, é desse valor que virá o tipo inferido), e
 isso anula a possibilidade de uma das falhas mais simples de segurança de C e
 C++: **`auto` impede com 100% de certeza o uso de variáveis não
-inicializadas!**. Ou seja, é impossível que se tenha:
+inicializadas!** Ou seja, é impossível que se tenha:
 
-```
+```cpp
 int i;
 foo(i); // qual o valor de `i`?
 ```
