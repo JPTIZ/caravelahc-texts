@@ -318,7 +318,11 @@ mais robusto, possivelmente pelo fato de que ele tem se mostrado uma ferramenta
 bastante natural dentro de linguagens para fornecer segurança, capacidade de
 performance (afinal, é uma das informações mais impactantes para seu compilador
 tomar decisões de quando pode otimizar - inclusive para JITs, dependendo do
-caso), e ainda enriquecer as formas de descrever seu software.
+caso), e ainda enriquecer as formas de descrever seu software. Inclusive,
+bastante desse investimento em sistemas de tipos tem vindo de ideias que
+surgiram na linguagem ML que foi comentada antes, ou seja: se tem buscado
+aspectos de programação funcional que fortalecem o poder de inferência e
+riqueza de sistemas de tipos para linguagens imperativas.
 
 E há bastante complexidade nisso: um dos desafios mais correntes atualmente é o
 de implementar **Tipos Dependentes** em linguagens _mainstream_, que em resumo
