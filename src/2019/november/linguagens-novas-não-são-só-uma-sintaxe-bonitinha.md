@@ -307,8 +307,8 @@ foo(i); // qual o valor de `i`?
 Que é justamente algo [destacado pela CVE como
 vulnerabilidade](https://cwe.mitre.org/data/definitions/457.html). Se você usa
 `auto` e tentar utilizar uma variável não-inicializada, seu programa não
-compila, fazendo jus a um provérbio moderno: "o programa mais seguro é aquele
-que não compila".
+compila, o que é uma vantagem, afinal como diz um provérbio moderno: "o
+programa mais seguro é aquele que não compila".
 
 Para onde vão as linguagens modernas
 ------------------------------------
