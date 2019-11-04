@@ -3,6 +3,19 @@ Linguagens modernas: só "uma nova sintaxe"?
 
 _Por Tiz_
 
+> **[Pequeno preâmbulo]**
+>
+> Eu havia começado a escrever este texto em Agosto/2019, porém _coisas
+> acontecem_ e desde lá não tive tempo - ou melhor, não tive coragem de
+> reservar tempo, afinal muita coisa tem acontecido desde então - para
+> continuá-lo, voltando só em Novembro/2019. Sendo assim, boa parte do teor
+> dele muda drasticamente a partir de certo ponto, visto que o que me inspirou
+> a escrevê-lo em Agosto não é mais o mesmo que me inspirou a voltar em
+> Novembro.
+>
+> Isso mostra que ter uma regularidade na escrita é algo bastante essencial,
+> então me cobrarei a manter uma regularidade melhor.
+
 Por algum motivo, em vez de admirar os avanços que se obtém em linguagens
 modernas, algumas pessoas na área de tecnologia acabam olhando para a novidade
 como uma perda de tempo, uma mera "brincadeira de novato". Programadores Python
@@ -200,8 +213,8 @@ e esses mesmos avanços acabam impactando no surgimento de melhores formas de
 descrever programas sem adicionar custos em tempo de execução (ou seja, sem
 piorar a performance ou aumentar o uso de memória).
 
-Linguagens modernas, modernização das linguagens
-------------------------------------------------
+Linguagens modernas, modernização das linguagens: uma questão de segurança
+--------------------------------------------------------------------------
 
 Se formos ser justos e realmente pensar na modernidade de linguagens, devemos
 considerar algumas ideias de projeto que visam **segurança**, um bom sistema de
@@ -296,6 +309,33 @@ vulnerabilidade](https://cwe.mitre.org/data/definitions/457.html). Se você usa
 compila, fazendo jus a um provérbio moderno: "o programa mais seguro é aquele
 que não compila".
 
+Para onde vão as linguagens modernas
+------------------------------------
+
+Boa parte do progresso tem sido em cima de construir um **sistema de tipos**
+mais robusto, possivelmente pelo fato de que ele tem se mostrado uma ferramenta
+bastante e natural dentro de linguagens para fornecer segurança, capacidade de
+performance (afinal, é uma das informações mais impactantes para seu compilador
+tomar decisões de quando pode otimizar - inclusive JITs, dependendo do caso), e
+ainda enriquecer as formas de descrever seu software.
+
+E há bastante complexidade nisso: um dos desafios mais correntes atualmente é o
+de implementar **Tipos Dependentes** em linguagens _mainstream_, que em resumo
+são tipos que dependem de valores. Pode ser, por exemplo, um tipo `Array<int,
+32>` (ou seja, Array de 32 elementos inteiros), que é diferente de uma variável
+do tipo `int[]` que coincidentemente está alocado com 32 elementos (como seria
+com linguagens como Java): o **tipo** da variável impõe a restrição de 32
+elementos. Isso eliminaria, por exemplo, a necessidade de se comparar se um
+acesso a um índice está dentro dos limites do _array_: isso já é descrito pelo
+**tipo** da linguagem, e portanto o compilador pode **provar** se esse acesso é
+válido ou não.
+
+Para este assunto, tome a liberdade de ler [este artigo sobre tipos
+dependentes](https://medium.com/background-thread/the-future-of-programming-is-dependent-types-programming-word-of-the-day-fcd5f2634878)
+e veja no que se baseia: indução matemática, conhecimento de sistemas de tipos,
+e mais uma penca de conhecimentos teóricos, muitos deles únicos da Ciência da
+Computação.
+
 Para finalizar
 --------------
 
@@ -314,19 +354,28 @@ pensadas, e isso é um **avanço tecnológico** com áreas de pesquisa dedicadas
 não uma brincadeira de criança. Tínhamos certos problemas no passado, eles
 foram (em boa parte) resolvidos, e agora devemos seguir em frente, e assim
 segue a evolução de linguagens: resolvendo problemas novos, não tendo apego aos
-antigos. Coloco minha opinião de que boa parte da resistência à modernidade é
-meramente questão de costume: veja a comunidade Java, que sempre criticou
-tentativas de modernização à linguagem e rebateu críticas ao excesso de
-verbosidade dela alegando coisas como "escrever mais é uma vantagem", porém
-quando em Java 10 se implementa inferência de tipos [saem notícias com títulos
-sobre o quanto essas features são
+antigos.
+
+Visto também que se diminuem linguagens dinâmicas como Python e JavaScript, que
+meramente reusam recursos de décadas anteriores a elas, coloco minha opinião de
+que boa parte da resistência à modernidade é meramente questão de costume: veja
+a comunidade Java, que sempre criticou tentativas de modernização à linguagem e
+rebateu críticas ao excesso de verbosidade dela alegando coisas como "escrever
+mais é uma vantagem", porém quando em Java 10 se implementa inferência de tipos
+[saem notícias com títulos sobre o quanto essas features são
 revolucionárias](https://blog.overops.com/how-java-10-will-change-the-way-you-code/).
 
 Devemos analisar mais as linguagens modernas com bons olhos e olhos de
 esperança por formas melhores de descrever nossas soluções do que desmerecer o
-trabalho de anos de pesquisa em Computação Teórica.
+trabalho de anos de pesquisa em Computação Teórica. Ponho a mão no fogo em
+dizer: linguagens de programação ainda vão mudar muito nos próximos anos.
 
-Ideas
------
+Leituras extras
+---------------
 
-https://medium.com/@sgrif/no-the-problem-isnt-bad-coders-ed4347810270
+1. [The Future of Programming is Dependent Types — Programming Word of the Day](https://medium.com/background-thread/the-future-of-programming-is-dependent-types-programming-word-of-the-day-fcd5f2634878)
+2. [No, the problem isn't "Bad Coders"](https://medium.com/@sgrif/no-the-problem-isnt-bad-coders-ed4347810270) - Sean Griffin, Medium
+3. [Microsoft: 70% of all security bugs are memory safety issues](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/) - Catalin Cimpanu, ZDNet
+4. [The Internet Has a Huge C/C++ Problem and Developers Don't Want to Deal With It](https://www.vice.com/en_us/article/a3mgxb/the-internet-has-a-huge-cc-problem-and-developers-dont-want-to-deal-with-it) - Alex Gaynor, Vice
+5. [Modern C++ won't save us](https://alexgaynor.net/2019/apr/21/modern-c++-wont-save-us/) - Alex Gaynor
+6. [CWE-457: Use of Uninitialized Variable](https://cwe.mitre.org/data/definitions/457.html) - CWE
