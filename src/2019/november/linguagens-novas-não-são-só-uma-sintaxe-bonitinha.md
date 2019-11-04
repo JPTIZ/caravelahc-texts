@@ -324,12 +324,12 @@ E há bastante complexidade nisso: um dos desafios mais correntes atualmente é 
 de implementar **Tipos Dependentes** em linguagens _mainstream_, que em resumo
 são tipos que dependem de valores. Pode ser, por exemplo, um tipo `Array<int,
 32>` (ou seja, Array de 32 elementos inteiros), que é diferente de uma variável
-do tipo `int[]` que coincidentemente está alocado com 32 elementos (como seria
-com linguagens como Java): o **tipo** da variável impõe a restrição de 32
-elementos. Isso eliminaria, por exemplo, a necessidade de se comparar se um
-acesso a um índice está dentro dos limites do _array_: isso já é descrito pelo
-**tipo** da linguagem, e portanto o compilador pode **provar** se esse acesso é
-válido ou não.
+do tipo `int[]` utilizado para alocar uma variável que coincidentemente
+armazena 32 elementos (como seria com linguagens como Java): o **tipo** da
+variável impõe a restrição de 32 elementos. Isso eliminaria, por exemplo, a
+necessidade de se comparar se um acesso a um índice está dentro dos limites do
+_array_: isso já é descrito pelo **tipo** da linguagem, e portanto o compilador
+pode **provar** se esse acesso é válido ou não.
 
 Para este assunto, tome a liberdade de ler [este artigo sobre tipos
 dependentes](https://medium.com/background-thread/the-future-of-programming-is-dependent-types-programming-word-of-the-day-fcd5f2634878)
