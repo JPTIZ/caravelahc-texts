@@ -264,9 +264,9 @@ programadores: em alguns casos, como C++, há tanta complexidade envolvida que
 **Scott Meyers**, o autor de _"Effective C++"_ e _"Effective Modern C++"_,
 [parou de atualizar seus livros para corrigir detalhes
 técnicos](http://scottmeyers.blogspot.com/2018/09/the-errata-evaluation-problem.html)
-pois apenas dois anos sem usar a linguagem foi o suficiente para não conseguir
-lembrar de cabeça certos detalhes essenciais sobre o funcionamento da
-linguagem.
+pois apenas dois anos e meio sem usar a linguagem foram o suficiente para não
+conseguir lembrar de cabeça certos detalhes essenciais sobre o funcionamento
+interno da linguagem.
 
 E mesmo modernizar as linguagens existentes não é o suficiente (leia: [C++
 moderno não irá nos
