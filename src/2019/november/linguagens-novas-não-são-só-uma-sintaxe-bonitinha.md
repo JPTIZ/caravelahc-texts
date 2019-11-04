@@ -317,8 +317,8 @@ Boa parte do progresso tem sido em cima de construir um **sistema de tipos**
 mais robusto, possivelmente pelo fato de que ele tem se mostrado uma ferramenta
 bastante natural dentro de linguagens para fornecer segurança, capacidade de
 performance (afinal, é uma das informações mais impactantes para seu compilador
-tomar decisões de quando pode otimizar - inclusive JITs, dependendo do caso), e
-ainda enriquecer as formas de descrever seu software.
+tomar decisões de quando pode otimizar - inclusive para JITs, dependendo do
+caso), e ainda enriquecer as formas de descrever seu software.
 
 E há bastante complexidade nisso: um dos desafios mais correntes atualmente é o
 de implementar **Tipos Dependentes** em linguagens _mainstream_, que em resumo
