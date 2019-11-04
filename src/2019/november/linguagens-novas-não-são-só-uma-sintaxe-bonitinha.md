@@ -253,7 +253,7 @@ Linux**. Se analisarmos a lista de CVE (_Common Vulnerabilities and Exposures_,
 que justamente lista vulnerabilidades comuns), veremos o seguinte gráfico
 ([fonte](https://phil-opp.github.io/talk-konstanz-may-2018/#14)):
 
-![CVEs encontradas no Kernel Linux](/img/Linux-CVEs-in-2018.svg)
+![CVEs encontradas no Kernel Linux](../../img/Linux-CVEs-in-2018.svg)
 
 Não há como negar que os desenvolvedores e avaliadores da base de código do
 kernel Linux são experientes: estamos falando inclusive de pessoas como Linus
