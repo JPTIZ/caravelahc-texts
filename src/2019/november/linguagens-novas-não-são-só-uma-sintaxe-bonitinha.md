@@ -155,9 +155,9 @@ chegaremos lá.
 Python e JavaScript: nem tão novas nem tão modernas
 ---------------------------------------------------
 
-Continuando a linha do tempo, temos **C++ (1980)** estendendo C para dar
-suporte a classes; **Eiffel (1985)** trazendo um sistema de testes totalmente
-checável em tempo de compilação (baseado na noção de [_Design by
+Continuando a linha do tempo, temos **C++ (1980)** inicialmente estendendo C
+para dar suporte a classes; **Eiffel (1985)** trazendo um sistema de testes
+totalmente checável em tempo de compilação (baseado na noção de [_Design by
 Contract_](https://en.wikipedia.org/wiki/Design_by_contract)); **Erlang
 (1986)** trazendo _pattern matching_ e alguns conceitos de programação
 funcional. E então, por mais que comumente se diga que Python e JavaScript são
@@ -174,8 +174,8 @@ linguagens de moderninhas se baseia em questões como:
 - São projetadas pensando em execução por interpretadores;
 - Carregam um caráter de simplicidade em relação à sintaxe.
 
-Ou seja, se vê flexibilidade e simplicidade como características modernas e
-infantis, porém essa visão é baseada em uma desinformação completa, veja:
+Ou seja, se vê flexibilidade e simplicidade como características modernas,
+porém essa visão é baseada em uma desinformação completa, veja:
 
 - Tipagem dinâmica já era presente em **APL** e **Lisp**, dos anos 1950 e 1960;
 - Já se tinham interpretadores para essas mesmas duas linguagens;
@@ -184,23 +184,10 @@ infantis, porém essa visão é baseada em uma desinformação completa, veja:
   código C](https://github.com/rui314/minilisp), ou seja, já tínhamos
   linguagens bastante simples e minimalistas há quase 40 anos.
 
-Então se há algo que se pode criticar programadores Python e JavaScript em
-termos de modernidade é justamente acreditar que estão utilizando _features_
-modernas quando elas já existem desde a metade do século passado. Nem mesmo
-_list-comprehensions_ de
+Nem mesmo _list-comprehensions_ de
 **[Haskell](https://en.wikipedia.org/wiki/Haskell_(programming_language))
 (1990)** são uma grande novidade, já que
 **[SETL](https://en.wikipedia.org/wiki/SETL) (1969)** já trazia essa _feature_.
-
-É claro, Python e JavaScript não são um exemplo de performance, mas isso não
-necessariamente é um problema: o ganho com produtividade costuma compensar,
-especialmente em _softwares_ cujo gargalo não seja processamento pesado (de que
-adianta otimizar tanto um programa que passa quase o tempo todo transferindo e
-recebendo dados pela rede ou disco?). E quando for o gargalo, isso só significa
-que uma linguagem dinâmica demais como Python não é adequada, mas nesse quesito
-temos linguagens realmente modernas mais adequadas, conforme será comentado
-mais à frente.
-
 
 A questão é que várias dessas _features_ não eram tão exploradas em linguagens
 _mainstream_ porque computadores antigamente não eram tão poderosos: se já era
